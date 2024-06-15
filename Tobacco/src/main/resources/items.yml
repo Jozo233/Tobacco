@@ -1,0 +1,10 @@
+items:
+  WILD_TOBACCO:
+    name: '&6Wild Tobacco'
+    material: ALLIUM
+    category: RESOURCES
+
+  TOBACCO:
+    name: '&6Tobacco'
+    material: CORNFLOWER
+    category: RESOURCES

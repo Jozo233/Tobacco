@@ -2,3 +2,6 @@ name: Tobacco
 version: '${project.version}'
 main: ml.jozo.tobacco.Tobacco
 api-version: 1.19
+
+depend:
+  - SlimeFun

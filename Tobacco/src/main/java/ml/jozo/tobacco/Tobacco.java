@@ -3,8 +3,9 @@ package ml.jozo.tobacco;
 import io.github.thebusybiscuit.slimefun4.api.SlimefunAddon;
 
 import io.github.thebusybiscuit.slimefun4.libraries.unirest.Config;
+import ml.jozo.tobacco.items.Filter;
+import ml.jozo.tobacco.items.Pipe;
 import ml.jozo.tobacco.items.WildTobacco;
-import ml.jozo.tobacco.items.Tobacco
 import org.bukkit.plugin.java.JavaPlugin;
 
 public class Tobacco extends JavaPlugin implements SlimefunAddon {
@@ -17,12 +18,14 @@ public class Tobacco extends JavaPlugin implements SlimefunAddon {
     @Override
     public void onEnable() {
         // Plugin startup logic
-        Config cfg = new Config(this);
+        // Config cfg = new Config(this);
 
         new WildTobacco(this);
 
 
         new ml.jozo.tobacco.items.Tobacco(this);
+        new Filter(this);
+        new Pipe(this);
 
     }
 

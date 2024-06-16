@@ -8,8 +8,3 @@ items:
     name: '&6Tobacco'
     material: CORNFLOWER
     category: RESOURCES
-
-  FILTER:
-    name: '&6Filter'
-    material: BRICK
-    category: RESOURCES

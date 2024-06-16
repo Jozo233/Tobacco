@@ -1,0 +1,6 @@
+name: Tobacco
+version: '1.0-SNAPSHOT'
+main: ml.jozo.tobacco.Tobacco
+api-version: 1.19
+
+depend: [Slimefun]

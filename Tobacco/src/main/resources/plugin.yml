@@ -2,5 +2,8 @@ name: Tobacco
 version: '${project.version}'
 main: ml.jozo.tobacco.Tobacco
 api-version: 1.19
-
 depend: [Slimefun]
+commands:
+  tobacco:
+    description: Basic commands Tobacco.
+    usage: /tobacco or /tobacco support

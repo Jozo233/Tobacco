@@ -4,13 +4,13 @@ A Slimefun 4 Addon that adds tobacco and  products from it
 # Todo
 
 ### Items
-- [x] Wild Tobacco
-- [x] Tobacco
+- [ ] Wild Tobacco
+- [ ] Tobacco
 - [x] Filter
 - [ ] Roling Paper
 - [ ] Puk 
 - [ ] Empty puk
-- [ ] Pipe
+- [x] Pipe
 
 ### Plants
 - [ ] Wild Tobacco Plants

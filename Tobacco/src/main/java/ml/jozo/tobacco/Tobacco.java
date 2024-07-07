@@ -2,12 +2,17 @@ package ml.jozo.tobacco;
 
 import io.github.thebusybiscuit.slimefun4.api.SlimefunAddon;
 
+import ml.jozo.tobacco.categories.Categories;
 import ml.jozo.tobacco.commands.TobaccoCommand;
-import ml.jozo.tobacco.items.Filter;
-import ml.jozo.tobacco.items.Pipe;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public class Tobacco extends JavaPlugin implements SlimefunAddon {
+
+    public static Tobacco instance;
+
+    public static Tobacco inst(){
+        return instance;
+    }
 
     @Override
     public JavaPlugin getJavaPlugin(){
@@ -16,8 +21,9 @@ public class Tobacco extends JavaPlugin implements SlimefunAddon {
 
     @Override
     public void onEnable() {
-        new Filter(this);
-        new Pipe(this);
+
+        instance = this;
+
 
         getLogger().info("######################################");
         getLogger().info("#          Tobaco by Jozo_85         #");
@@ -25,6 +31,9 @@ public class Tobacco extends JavaPlugin implements SlimefunAddon {
         getLogger().info("######################################");
 
         this.getCommand("tobacco").setExecutor(new TobaccoCommand());
+
+
+        setupSlimefun();
 
     }
 
@@ -37,5 +46,9 @@ public class Tobacco extends JavaPlugin implements SlimefunAddon {
     @Override
     public String getBugTrackerURL() {
         return null;
+    }
+
+    private void setupSlimefun(){
+        Categories.set(this);
     }
 }
